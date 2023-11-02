@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kosea`s Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+    href="https://stackpath.bootstapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section id="banner">
+        <div class="banner-text">
+            <h1>Kosea The Cool Guy</h1>
+            <p>Meet Me Meet Happiness</p>
+            <div class="banner-btn">
+                <a href="#"><span></span>Find Out</a>
+                <a href="#"><span></span>Read More</a>
+
+            </div>
+        </div>
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Family</a></li>
+                <li><a href="#">Friends</a></li>
+                <li><a href="#">Happy Moments</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div id="menuBtn">
+        <img src="images/menu.png" id="menu">
+    </div>
+
+<!--family-->
+<section id="family">
+<div class="title-text">
+<p>FAMILY</p>
+<h1>Always United</h1>
+</div>
+<div class="family-box">
+    <div class="Family"> 
+        <h1>United</h1>
+        <div class="family-disc">
+            <div class="family-icon">
+                <i class="fa fa-shield"></i>
+            </div>
+            <div class="family-text">
+                <p>Togetherness brings development</p>
+            </div>
+        </div>
+    </div>
+    <div class="family-img">
+        <img src="images/fm.jpg">
+    </div>
+</div>
+
+</section>
+
+<!--friends-->
+<section id="friends">
+    <div class="title-text">
+        <p>FRIENDS</p>
+        <h1>Meaning Of Life Created</h1>
+        </div>
+        <div class="friends-box">
+            <div class="single-friend">
+                <img src="images/img-2.jpg">
+                <div class="overlay"></div>
+                <div class="friend-disc">
+                    <h3>Shiva Quilt</h3>
+                    <hr>
+                    <p>So fine than any one you think</p>
+                </div>
+            </div>
+            <div class="single-friend">
+                <img src="images/banner.jpg">
+                <div class="overlay"></div>
+                <div class="friend-disc">
+                    <h3>Ken Authur</h3>
+                    <hr>
+                    <p>A friend who is always there in all deeps and flats</p>
+                </div>
+            </div>
+            <div class="single-friend"></div>
+        </div>
+</section>
+<!--Happy moments-->
+
+<section id="happy-moment">
+    <div class="title-text">
+        <p>HAPPY MOMENTS</p>
+        <h1>Time Spent Well Keeps A Smile</h1>
+        </div>
+        <div class="video">
+        <video src="images/kl.mp4" width="400" height="340" controls></video>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+
+        sideNav.style.right ="-250px";
+
+menu.onclick =function(){
+    if(sideNav.style.right =="-250px"){
+        sideNav.style.right ="0";
+        menu.scr ="images/close.png";
+    }
+    else{
+        sideNav.style.right ="-250px";
+        menu.scr = "images/menu.png";
+    }
+}
+
+    </script>
+    
+</body>
+</html>
